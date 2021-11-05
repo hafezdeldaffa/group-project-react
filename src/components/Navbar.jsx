@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <nav
-      className="navbar navbar-expand-lg navbar-dark"
+      className="navbar navbar-expand-lg navbar-dark sticky-top"
       style={{backgroundColor: '#2647bd'}}
     >
       <div className="container-fluid">

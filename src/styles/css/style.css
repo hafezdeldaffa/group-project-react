@@ -23,3 +23,28 @@
 .lead {
   font-family: 'Roboto';
 }
+
+
+.serviceInfo-bg {
+  min-height: 300px;
+  width: 100%;
+  background: #2647bd;
+  padding: 4rem 0rem;
+}
+
+
+.serviceInfo-h4 {
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: white;
+}
+
+.serviceInfo-btn {
+  background-color: #38A3A5 !important;
+  color: white !important;
+  border-radius: 15px !important;
+}
+
+.symptom-p {
+  text-align: justify;
+}
