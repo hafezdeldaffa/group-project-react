@@ -34,21 +34,21 @@ const ServiveInfo = () => {
                     <div className="row">
                             <div className="col-12 col-lg-4 col-sm-12 px-4">
                                 <h4 className="serviceInfo-h4 mb-lg-4 mb-2">Cari Info Vaksin</h4>
-                                <p className="text-white">Temukan lokasi serta kontak dari rumah sakit terdekat sekitar Anda dengan cepat.</p>
+                                <p className="text-white">Temukan lokasi-lokasi diadakannya vaksinasi di daerah anda.</p>
                                 <button type="button" className="btn btn-md serviceInfo-btn px-4 me-md-2 mb-3">
                                     Selengkapnya
                                 </button>
                             </div>
                             <div className="col-12 col-lg-4 col-sm-12  px-4">
                                 <h4 className="serviceInfo-h4 mb-lg-4 mb-2">Cari Oksigen</h4>
-                                <p className="text-white">Laporkan keadaan darurat dan dapatkan pelayanan ambulans dengan segera.</p>
+                                <p className="text-white">Temukan layanan bantuan untuk mendapatkan oksigen bagi penderita COVID-19.</p>
                                 <button type="button" className="btn btn-md serviceInfo-btn px-4 me-md-2 mb-3">
                                     Selengkapnya
                                 </button>
                             </div>
                             <div className="col-12 col-lg-4 col-sm-12  px-4">
                                 <h4 className="serviceInfo-h4 mb-lg-4 mb-2">Cari Kontak Darurat</h4>
-                                <p className="text-white">Layanan bantuan untuk menemukan donor plasma darah bagi penderita COVID-19.</p>
+                                <p className="text-white">Layanan Kontak darurat dari begbagai instansi untuk anda mencari bantuan .</p>
                                 <button type="button" className="btn btn-md serviceInfo-btn px-4 me-md-2 mb-3">
                                     Selengkapnya
                                 </button>
