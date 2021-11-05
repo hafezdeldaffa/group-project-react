@@ -41,7 +41,7 @@ const ServiveInfo = () => {
                             </div>
                             <div className="col-12 col-lg-4 col-sm-12  px-4">
                                 <h4 className="serviceInfo-h4 mb-lg-4 mb-2">Cari Oksigen</h4>
-                                <p className="text-white">Temukan layanan bantuan untuk mendapatkan oksigen bagi penderita COVID-19.</p>
+                                <p className="text-white">Temukan layanan bantuan oksigen bagi penderita COVID-19.</p>
                                 <button type="button" className="btn btn-md serviceInfo-btn px-4 me-md-2 mb-3">
                                     Selengkapnya
                                 </button>
