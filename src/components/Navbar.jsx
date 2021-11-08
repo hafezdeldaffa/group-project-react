@@ -20,8 +20,9 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
             <a className="nav-link active" aria-current="page" href="/">Beranda</a>
+            <a className="nav-link" href="/">Data Indonesia</a>
+            <a className="nav-link" href="/">Data Dunia</a>
             <a className="nav-link" href="/">Informasi</a>
-            <a className="nav-link" href="/">Kasus Covid</a>
             <a className="nav-link" href="/">Fitur</a>
           </div>
         </div>
