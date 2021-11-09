@@ -1,12 +1,19 @@
-import React from "react"
-import Navbar from "../components/Navbar"
+import React, { useContext } from 'react';
+import CardCase from '../components/CardCase';
+import Navbar from '../components/Navbar';
+import { IndonesiaContext } from '../context/IndonesiaContext';
 
 const IndonesiaData = () => {
-    return (
-        <React.Fragment>
-            <Navbar/>
-        </React.Fragment>
-    )
-}
+  const [cases] = useContext(IndonesiaContext);
 
-export default IndonesiaData
+  return (
+    <React.Fragment>
+      <Navbar />
+      {cases.map((cases) => {
+        return <CardCase key={cases.length} cases={cases} />;
+      })}
+    </React.Fragment>
+  );
+};
+
+export default IndonesiaData;
