@@ -19,25 +19,25 @@ const CardCase = ({ ...data }) => {
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Positif</h5>
-              <p className='card-text'># {data.cases.positif}</p>
+              <li className='card-text'>{data.cases.positif}</li>
             </div>
           </div>
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Sembuh</h5>
-              <p className='card-text'># {data.cases.sembuh}</p>
+              <li className='card-text'>{data.cases.sembuh}</li>
             </div>
           </div>
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Meninggal</h5>
-              <p className='card-text'># {data.cases.meninggal}</p>
+              <li className='card-text'>{data.cases.meninggal}</li>
             </div>
           </div>
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Dirawat</h5>
-              <p className='card-text'># {data.cases.dirawat}</p>
+              <li className='card-text'>{data.cases.dirawat}</li>
             </div>
           </div>
         </div>
