@@ -1,18 +1,23 @@
-import React, { useContext } from "react"
-import CardCase from "../components/CardCase"
-import Navbar from "../components/Navbar"
-import {  } from "../context/IndonesiaContext"
+import React, { useContext } from 'react';
+import CardCaseGlobal from '../components/CardCaseGlobal';
+import Navbar from '../components/Navbar';
+import { GlobalContext } from '../context/GlobalContext';
 
 const GlobalData = () => {
+  const [...value] = useContext(GlobalContext);
+  console.log(value);
 
-    const data = useContext()
+  return (
+    <React.Fragment>
+      <Navbar />
+      <CardCaseGlobal
+        key={value.length}
+        positif={value[0]}
+        meninggal={value[1]}
+        sembuh={value[2]}
+      />
+    </React.Fragment>
+  );
+};
 
-    return (
-        <React.Fragment>
-            <Navbar/>
-            <CardCase props={data}/>
-        </React.Fragment>
-    )
-}
-
-export default GlobalData
+export default GlobalData;
