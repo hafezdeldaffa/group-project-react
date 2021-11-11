@@ -40,7 +40,7 @@ const Navbar = () => {
               ))}
           </ul>
         </div>
-        <a className="nav-link text-white" href="/">Masuk</a>
+        <a className="nav-link btn-masuk px-4 fw-normal" href="/">Masuk</a>
       </div>
     </nav>
     )
