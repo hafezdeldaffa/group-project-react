@@ -2,7 +2,7 @@
 const ServiveInfo = () => {
     return (
         <div className="serviceInfo-bg">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="container">
                 <div className="carousel-inner px-4">
                     <div className="carousel-item active " >
