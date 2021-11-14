@@ -48,3 +48,26 @@
 .symptom-p {
   text-align: justify;
 }
+
+.IndonesiaCases-bg {
+  min-height: 300px;
+  width: 100%;
+  background: #2647bd;
+  padding: 4rem 0rem;
+}
+
+.bg-positif{
+  background: #E8C926 !important;
+}
+
+.bg-negative{
+  background: orange !important;
+}
+
+.bg-recovered{
+  background: #38A3A5 !important;
+}
+
+.bg-vacinated{
+  background: #D57CFF !important;
+}
