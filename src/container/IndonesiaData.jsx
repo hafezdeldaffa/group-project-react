@@ -7,13 +7,12 @@ import { ProvinceContext } from '../context/ProvinceContext';
 import ChartIndo from '../components/ChartIndo';
 import SortAndSearch from '../components/SortAndSearch';
 import { IndonesiaDailyContext } from '../context/IndonesiaDailyContext';
-import { IndonesiaDailyContextProvider } from '../context/IndonesiaDailyContext';
 
 const IndonesiaData = () => {
 
   const [cases] = useContext(IndonesiaContext);
   const [ProvCases] = useContext(ProvinceContext);
-  
+  const [DailyCases] = useContext(IndonesiaDailyContext);
 
   return (
     <React.Fragment>
@@ -22,9 +21,7 @@ const IndonesiaData = () => {
         {cases.map((cases) => {
           return <CardCase key={cases.length} cases={cases} />;
         })}
-        <IndonesiaDailyContextProvider>
-        <ChartIndo/>
-        </IndonesiaDailyContextProvider>
+          <ChartIndo key={DailyCases.length} DailyCases={DailyCases}/>
         <SortAndSearch />
         <ProvinceDataTable key={ProvCases.length} ProvCases={ProvCases} />
       </div>
