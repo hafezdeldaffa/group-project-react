@@ -9,12 +9,13 @@ import { IndoContextProvider } from './context/IndonesiaContext';
 import { ProvinceContextProvider } from './context/ProvinceContext';
 import { IndonesiaDailyContextProvider } from './context/IndonesiaDailyContext';
 
+
 function App() {
   return (
     <React.Fragment>
       <IndoContextProvider>
         <ProvinceContextProvider>
-          {/* <IndonesiaDailyContextProvider> */}
+          <IndonesiaDailyContextProvider>
           <BrowserRouter>
           <Routes>
             <Route path='/' element={<LandingPage />}></Route>
@@ -22,7 +23,7 @@ function App() {
             <Route path='/global' element={<GlobalData />}></Route>
           </Routes>
         </BrowserRouter>
-          {/* </IndonesiaDailyContextProvider> */}
+        </IndonesiaDailyContextProvider>
         </ProvinceContextProvider>
       </IndoContextProvider>
     </React.Fragment>
