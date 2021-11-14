@@ -12,9 +12,9 @@ const Sort = () => {
         category: obj.category,
     };
 
-    const categories = ["Province", "Positive", "Death", "Recovered"];
+    const categories = ["Province", "Death", "Positive", "Recovered"];
 
-    const [category, setCategory] = useState(params.category || categories[0]);
+    const [category, setCategory] = useState(params.category || categories[2]);
 
     let navigate = useNavigate();
     function handleClick() {
@@ -23,9 +23,7 @@ const Sort = () => {
 
     return (
         <div className="btn-group my-3">
-            <a className="" data-bs-toggle="dropdown" aria-expanded="false">
-                <img className="sort-img" src="/images/equalizer.png" ></img>
-            </a>
+            <img className="sort-img" data-bs-toggle="dropdown" aria-expanded={false} src="/images/equalizer.png" alt="sort"></img>
             <ul className="dropdown-menu px-3">
                 <div className="form-check">
                     {
@@ -40,7 +38,7 @@ const Sort = () => {
                                         onChange={() => setCategory(c)}
                                         defaultValue={category}
                                     />
-                                    <label className="form-check-label" for={c}>
+                                    <label className="form-check-label" htmlFor={c}>
                                         {c}
                                     </label>
                                 </li>
@@ -48,7 +46,7 @@ const Sort = () => {
                         ))
                     }
                 </div>
-                <li><a className="btn btn-sm btn-sort d-flex justify-content-center my-2" onClick={handleClick}>Urutkan</a></li>
+                <li><button className="btn btn-sm btn-sort d-flex justify-content-center my-2" href="#"  onClick={handleClick}>Urutkan</button></li>
             </ul>
         </div>
     )
