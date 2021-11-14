@@ -70,6 +70,7 @@
   border-width:0px;
   border:none;
   outline: none;
+  width: 60%;
 }
 
 .btn-icon{
@@ -98,4 +99,19 @@
   background: white;
   border-radius: 50px;
   color: #2647bd;
+}
+
+.my-custom-scrollbar {
+  position: relative;
+  height: 500px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+
+
+  .theader{
+    position:sticky;
+    top: 0 ;
 }
