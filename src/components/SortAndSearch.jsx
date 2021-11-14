@@ -7,13 +7,13 @@ const SortAndSearch = () =>{
     
   const [ProvCases] = useContext(ProvinceContext);
     return(
-      <div class="container mt-4">
-      <div class="row">
-        <div class="col-2 col-md-6">
+      <div className="container mt-4">
+      <div className="row">
+        <div className="col-2 col-md-6">
           <Sort />
         </div>
-        <div class="col-10 col-md-6">
-          <Search ProvCases={ProvCases} />
+        <div className="col-10 col-md-6">
+          <Search key={ProvCases.length} ProvCases={ProvCases} />
         </div>
       </div>
     </div>
