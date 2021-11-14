@@ -1,16 +1,20 @@
-import React, { useContext } from "react"
-import CardCase from "../components/CardCase"
+import React from "react"
 import Navbar from "../components/Navbar"
 import {  } from "../context/IndonesiaContext"
+import { CountriesContextProvider } from "../context/CountriesContext"
+import CountriesDataTable from "../components/CountriesDataTable"
+import SortAndSearchCountries from "../components/SortAndSearchCountries"
 
 const GlobalData = () => {
-
-    const data = useContext()
-
     return (
         <React.Fragment>
             <Navbar/>
-            <CardCase props={data}/>
+            <CountriesContextProvider>
+                <SortAndSearchCountries></SortAndSearchCountries>
+            </CountriesContextProvider>
+            <CountriesContextProvider>
+                <CountriesDataTable></CountriesDataTable>
+            </CountriesContextProvider>
         </React.Fragment>
     )
 }

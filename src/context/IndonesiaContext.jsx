@@ -10,7 +10,6 @@ export const IndoContextProvider = (props) => {
       .then((res) => res.json())
       .then((result) => {
         setCases(result);
-        console.log(result);
       });
   }, []);
 

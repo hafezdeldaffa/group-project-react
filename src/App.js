@@ -6,18 +6,25 @@ import './styles/css/style.css';
 import IndonesiaData from './container/IndonesiaData';
 import GlobalData from './container/GlobalData';
 import { IndoContextProvider } from './context/IndonesiaContext';
+import { ProvinceContextProvider } from './context/ProvinceContext';
+import { IndonesiaDailyContextProvider } from './context/IndonesiaDailyContext';
+
 
 function App() {
   return (
     <React.Fragment>
       <IndoContextProvider>
-        <BrowserRouter>
+        <ProvinceContextProvider>
+          <IndonesiaDailyContextProvider>
+          <BrowserRouter>
           <Routes>
             <Route path='/' element={<LandingPage />}></Route>
             <Route path='/indonesia' element={<IndonesiaData />}></Route>
             <Route path='/global' element={<GlobalData />}></Route>
           </Routes>
         </BrowserRouter>
+        </IndonesiaDailyContextProvider>
+        </ProvinceContextProvider>
       </IndoContextProvider>
     </React.Fragment>
   );
