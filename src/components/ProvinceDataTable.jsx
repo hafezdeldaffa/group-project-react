@@ -15,7 +15,7 @@ const ProvinceDataTable = ({ ...data }) => {
     };
   
     const filter = {
-      category:  params.category ||categories[0],
+      category:  params.category ||categories[1],
     };
 
     const filtered = data.ProvCases.sort((a, b) => filter.category === "Province" ? (a.provinsi > b.provinsi ? 1 : -1)
@@ -25,15 +25,17 @@ const ProvinceDataTable = ({ ...data }) => {
 
     return (
         <div className="container">
-            <table className="table table-borderless table-hover shadow">
+             <div class="table-wrapper-scroll-y my-custom-scrollbar">
+            <div className="table-responsive">
+            <table className="table table-borderless table-hover shadow table-fixed">
                 <thead className="bg-table text-white">
                     <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Provinsi</th>
-                        <th scope="col">Positif</th>
-                        <th scope="col">Dirawat</th>
-                        <th scope="col">Sembuh</th>
-                        <th scope="col">Meninggal</th>
+                        <th scope="col" className=" d-none d-sm-block sticky-top">No</th>
+                        <th scope="col" className="sticky-top">Provinsi</th>
+                        <th scope="col" className="sticky-top">Positif</th>
+                        <th scope="col" className="sticky-top">Dirawat</th>
+                        <th scope="col" className="sticky-top">Sembuh</th>
+                        <th scope="col" className="sticky-top">Meninggal</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,7 +43,7 @@ const ProvinceDataTable = ({ ...data }) => {
                         filtered.map((element, index) => {
                            return(
                             <tr className="border-1">
-                                <th scope="row">{index+1}</th>
+                                <th scope="row" className=" d-none d-sm-block">{index+1}</th>
                                 <td>{element.provinsi}</td>
                                 <td>{element.kasus}</td>
                                 <td>{element.dirawat}</td>
@@ -53,6 +55,8 @@ const ProvinceDataTable = ({ ...data }) => {
                     }
                 </tbody>
             </table>
+            </div>
+            </div>
         </div>
     )
 }
