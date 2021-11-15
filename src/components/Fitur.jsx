@@ -22,7 +22,7 @@ const Fitur = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Fitur;
