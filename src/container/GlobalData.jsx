@@ -4,6 +4,7 @@ import { GlobalContext } from '../context/GlobalContext';
 import CountriesDataTable from '../components/CountriesDataTable';
 import SortAndSearchCountries from '../components/SortAndSearchCountries';
 import CardCaseGlobal from '../components/CardCaseGlobal';
+import Footer from '../components/Footer';
 
 const GlobalData = () => {
   const [...value] = useContext(GlobalContext);
@@ -20,6 +21,7 @@ const GlobalData = () => {
       />
       <SortAndSearchCountries></SortAndSearchCountries>
       <CountriesDataTable></CountriesDataTable>
+      <Footer/>
     </React.Fragment>
   );
 };

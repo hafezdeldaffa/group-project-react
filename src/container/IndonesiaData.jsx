@@ -7,6 +7,7 @@ import { ProvinceContext } from '../context/ProvinceContext';
 import ChartIndo from '../components/ChartIndo';
 import SortAndSearch from '../components/SortAndSearch';
 import { IndonesiaDailyContext } from '../context/IndonesiaDailyContext';
+import Footer from '../components/Footer';
 
 const IndonesiaData = () => {
 
@@ -24,6 +25,7 @@ const IndonesiaData = () => {
           <ChartIndo key={DailyCases.length} DailyCases={DailyCases}/>
         <SortAndSearch />
         <ProvinceDataTable key={ProvCases.length} ProvCases={ProvCases} />
+        <Footer/>
       </div>
     </React.Fragment>
   );

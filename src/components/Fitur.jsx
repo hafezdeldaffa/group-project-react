@@ -3,15 +3,15 @@ const Fitur = () => {
         <div className="container">
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-lg-6">
-                    <div className="mt-5">
+                    <div className="">
                         <h4 className="fw-bold"> Fitur Dari Neimo </h4>
-                        <p> Neimo memberikan kemudahan bagi kepala RT serta masyarakat dalam
-                            pelacakan COVID-19 di lingkungan sekitar. Fitur yang ditawarkan Neimo meliputi :
+                        <p> Neimo memberikan kemudahan bagi masyarakat dalam
+                            menemukan informasi terkait COVID-19. Fitur yang ditawarkan Neimo meliputi :
                         </p>
                         <ul>
-                            <li>Laporan Kasus Positif dan Vaksinasi</li>
+                            <li>Laporan Kasus Covid-19 di Indonesia dan Global</li>
                             <li>Visualisasi Data Statistika Covid-19</li>
-                            <li>Cari Rumah Sakit dan Ambulans</li>
+                            <li>Cari Rumah Sakit, Ambulans, dan lainnya</li>
                         </ul>
                     </div>
                 </div>
