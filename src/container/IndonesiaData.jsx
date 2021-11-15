@@ -9,19 +9,18 @@ import SortAndSearch from '../components/SortAndSearch';
 import { IndonesiaDailyContext } from '../context/IndonesiaDailyContext';
 
 const IndonesiaData = () => {
-
   const [cases] = useContext(IndonesiaContext);
   const [ProvCases] = useContext(ProvinceContext);
   const [DailyCases] = useContext(IndonesiaDailyContext);
 
   return (
     <React.Fragment>
-      <div className="bg-light">
+      <div className='bg-light'>
         <Navbar />
         {cases.map((cases) => {
           return <CardCase key={cases.length} cases={cases} />;
         })}
-          <ChartIndo key={DailyCases.length} DailyCases={DailyCases}/>
+        <ChartIndo key={DailyCases.length} DailyCases={DailyCases} />
         <SortAndSearch />
         <ProvinceDataTable key={ProvCases.length} ProvCases={ProvCases} />
       </div>
