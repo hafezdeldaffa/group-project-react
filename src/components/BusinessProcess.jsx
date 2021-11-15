@@ -21,6 +21,7 @@ const BusinessProcess = () => {
             <img
               src='/images/undraw_Usability_testing_re_uu1g.png'
               width='100%'
+              alt='Images'
             />
           </div>
         </div>
