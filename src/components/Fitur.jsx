@@ -1,9 +1,10 @@
 const Fitur = () => {
-    return (
+   return (
         <div className="container">
-            <div className="row d-flex align-items-center ">
+            <div className="row">
                 <div className="col-12 col-lg-6">
-                    <div className=""><h4 className="fw-bold"> Fitur Dari Neimo </h4>
+                    <div className="mt-5">
+                        <h4 className="fw-bold"> Fitur Dari Neimo </h4>
                         <p> Neimo memberikan kemudahan bagi kepala RT serta masyarakat dalam
                             pelacakan COVID-19 di lingkungan sekitar. Fitur yang ditawarkan Neimo meliputi :
                         </p>
@@ -15,7 +16,6 @@ const Fitur = () => {
                     </div>
                 </div>
                 <div className="col-12 col-lg-6">
-
                     <div className="p-5">
                         <img src="/images/undraw_Dropdown_menu_re_jqqs.png" width="100%" />
                     </div>
@@ -23,6 +23,6 @@ const Fitur = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Fitur;
