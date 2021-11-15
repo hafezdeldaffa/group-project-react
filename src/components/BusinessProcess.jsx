@@ -14,7 +14,7 @@ const BusinessProcess = () => {
                 <div className="col-12 col-lg-6">
 
                     <div className="p-5">
-                        <img src="/images/undraw_Usability_testing_re_uu1g.png" width="100%" />
+                        <img src="/images/undraw_Usability_testing_re_uu1g.png" width="100%" alt="image" />
                     </div>
                 </div>
             </div>
