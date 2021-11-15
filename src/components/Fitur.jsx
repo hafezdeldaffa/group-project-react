@@ -1,7 +1,7 @@
 const Fitur = () => {
    return (
         <div className="container">
-            <div className="row">
+            <div className="row d-flex align-items-center">
                 <div className="col-12 col-lg-6">
                     <div className="mt-5">
                         <h4 className="fw-bold"> Fitur Dari Neimo </h4>
