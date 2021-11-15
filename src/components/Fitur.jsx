@@ -17,7 +17,7 @@ const Fitur = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                     <div className="p-5">
-                        <img src="/images/undraw_Dropdown_menu_re_jqqs.png" width="100%" />
+                        <img src="/images/undraw_Dropdown_menu_re_jqqs.png" width="100%" alt="image"/>
                     </div>
                 </div>
             </div>
