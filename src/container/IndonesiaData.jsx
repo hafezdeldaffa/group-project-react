@@ -10,19 +10,18 @@ import { IndonesiaDailyContext } from '../context/IndonesiaDailyContext';
 import Footer from '../components/Footer';
 
 const IndonesiaData = () => {
-
   const [cases] = useContext(IndonesiaContext);
   const [ProvCases] = useContext(ProvinceContext);
   const [DailyCases] = useContext(IndonesiaDailyContext);
 
+  console.log(cases);
+
   return (
     <React.Fragment>
-      <div className="bg-light">
+      <div className='bg-light'>
         <Navbar />
-        {cases.map((cases) => {
-          return <CardCase key={cases.length} cases={cases} />;
-        })}
-          <ChartIndo key={DailyCases.length} DailyCases={DailyCases}/>
+        <CardCase key={cases.length} cases={cases} />;
+        <ChartIndo key={DailyCases.length} DailyCases={DailyCases} />
         <SortAndSearch />
         <ProvinceDataTable key={ProvCases.length} ProvCases={ProvCases} />
         <Footer/>

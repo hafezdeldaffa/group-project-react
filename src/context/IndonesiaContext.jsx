@@ -6,7 +6,7 @@ export const IndoContextProvider = (props) => {
   const [cases, setCases] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.kawalcorona.com/indonesia')
+    fetch('https://apicovid19indonesia-v2.vercel.app/api/indonesia')
       .then((res) => res.json())
       .then((result) => {
         setCases(result);
