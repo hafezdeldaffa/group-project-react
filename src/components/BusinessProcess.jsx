@@ -20,7 +20,7 @@ const BusinessProcess = () => {
                 </div>
             </div>
         </div>
-    )
-}
+  );
+};
 
 export default BusinessProcess;

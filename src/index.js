@@ -5,10 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import { GlobalContextProvider } from './context/GlobalContext';
+import { IndoContextProvider } from './context/IndonesiaContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalContextProvider>
+      <IndoContextProvider>
+        <App />
+      </IndoContextProvider>
+    </GlobalContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

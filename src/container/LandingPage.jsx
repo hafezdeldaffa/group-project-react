@@ -8,20 +8,19 @@ import BusinessProcess from '../components/BusinessProcess';
 import Fitur from '../components/Fitur';
 import Footer from '../components/Footer';
 
-
 const LandingPage = () => {
-    return(
-        <React.Fragment>
-            <Navbar/>
-            <ImageLanding/>
-            <ServiveInfo/>
-            <SymptomSection/>
-            <IndonesiaCases/>
-            <BusinessProcess/>
-            <Fitur/>
-            <Footer/>
-        </React.Fragment>
-    )
-}
+  return (
+    <React.Fragment>
+      <Navbar />
+      <ImageLanding />
+      <ServiveInfo />
+      <SymptomSection />
+      <IndonesiaCases />
+      <BusinessProcess />
+      <Fitur />
+      <Footer />
+    </React.Fragment>
+  );
+};
 
-export default LandingPage
+export default LandingPage;

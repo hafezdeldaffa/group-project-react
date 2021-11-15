@@ -1,22 +1,27 @@
-import React from "react"
-import Navbar from "../components/Navbar"
-import {  } from "../context/IndonesiaContext"
-import { CountriesContextProvider } from "../context/CountriesContext"
-import CountriesDataTable from "../components/CountriesDataTable"
-import SortAndSearchCountries from "../components/SortAndSearchCountries"
+import React, { useContext } from 'react';
+import Navbar from '../components/Navbar';
+import { GlobalContext } from '../context/GlobalContext';
+import CountriesDataTable from '../components/CountriesDataTable';
+import SortAndSearchCountries from '../components/SortAndSearchCountries';
+import CardCaseGlobal from '../components/CardCaseGlobal';
 
 const GlobalData = () => {
-    return (
-        <React.Fragment>
-            <Navbar/>
-            <CountriesContextProvider>
-                <SortAndSearchCountries></SortAndSearchCountries>
-            </CountriesContextProvider>
-            <CountriesContextProvider>
-                <CountriesDataTable></CountriesDataTable>
-            </CountriesContextProvider>
-        </React.Fragment>
-    )
-}
+  const [...value] = useContext(GlobalContext);
+  console.log(value);
 
-export default GlobalData
+  return (
+    <React.Fragment>
+      <Navbar />
+      <CardCaseGlobal
+        key={value.length}
+        positif={value[0]}
+        meninggal={value[1]}
+        sembuh={value[2]}
+      />
+      <SortAndSearchCountries></SortAndSearchCountries>
+      <CountriesDataTable></CountriesDataTable>
+    </React.Fragment>
+  );
+};
+
+export default GlobalData;
