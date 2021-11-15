@@ -13,13 +13,13 @@ const IndonesiaData = () => {
   const [ProvCases] = useContext(ProvinceContext);
   const [DailyCases] = useContext(IndonesiaDailyContext);
 
+  console.log(cases);
+
   return (
     <React.Fragment>
       <div className='bg-light'>
         <Navbar />
-        {cases.map((cases) => {
-          return <CardCase key={cases.length} cases={cases} />;
-        })}
+        <CardCase key={cases.length} cases={cases} />;
         <ChartIndo key={DailyCases.length} DailyCases={DailyCases} />
         <SortAndSearch />
         <ProvinceDataTable key={ProvCases.length} ProvCases={ProvCases} />

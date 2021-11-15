@@ -1,4 +1,4 @@
-const CardCase = ({ ...data }) => {
+const CardCase = ({ cases }) => {
   return (
     <div className='container'>
       <div
@@ -15,33 +15,34 @@ const CardCase = ({ ...data }) => {
                 style={{ width: '36px' }}
               />
             </div>
+
             <div className='col px-6 col-sm-8 mt-4'>
-              <h3>Covid in {data.cases.name}</h3>
+              <h3>Covid in Indonesia</h3>
             </div>
           </div>
           <div className='row mb-4 px-4'>
             <div className='col-12 col-md-3 col-sm-6 '>
               <div className='card-body'>
                 <h5 className='card-title'>Positif</h5>
-                <li className='card-text'>{data.cases.positif}</li>
+                <li className='card-text'>{cases.positif}</li>
               </div>
             </div>
             <div className='col-12 col-md-3 col-sm-6'>
               <div className='card-body'>
                 <h5 className='card-title'>Sembuh</h5>
-                <li className='card-text'>{data.cases.sembuh}</li>
+                <li className='card-text'>{cases.sembuh}</li>
               </div>
             </div>
             <div className='col-12 col-md-3 col-sm-6'>
               <div className='card-body'>
                 <h5 className='card-title'>Meninggal</h5>
-                <li className='card-text'>{data.cases.meninggal}</li>
+                <li className='card-text'>{cases.meninggal}</li>
               </div>
             </div>
             <div className='col-12 col-md-3 col-sm-6'>
               <div className='card-body'>
                 <h5 className='card-title'>Dirawat</h5>
-                <li className='card-text'>{data.cases.dirawat}</li>
+                <li className='card-text'>{cases.dirawat}</li>
               </div>
             </div>
           </div>
