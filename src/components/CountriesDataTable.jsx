@@ -27,7 +27,7 @@ const CountriesDataTable = () => {
     : (a.attributes.Recovered > b.attributes.Recovered ? -1 : 1));
 
     return (
-        <div className="container">
+        <div className="container mb-5">
             <div class="table-wrapper-scroll-y my-custom-scrollbar">
             <div className="table-responsive">
             <table className="table table-borderless table-hover shadow">

@@ -1,7 +1,8 @@
 const CardCaseGlobal = ({ positif, meninggal, sembuh }) => {
   console.log(sembuh);
   return (
-    <div className='card mb-3 mx-auto mt-5' style={{ maxWidth: '700px' }}>
+    <div className="container">
+      <div className='card mb-3 mx-auto mt-4 shadow border-0' style={{ maxWidth: '700px' }}>
       <div className='row g-0'>
         <div className='row row-cols-auto'>
           <div className='col mt-2 px-3 align-self-center'>
@@ -13,7 +14,7 @@ const CardCaseGlobal = ({ positif, meninggal, sembuh }) => {
             />
           </div>
           <div className='col px-6 col-sm-8 mt-4'>
-            <h6>Covid Global Data</h6>
+            <h3>Covid Global Data</h3>
           </div>
         </div>
         <div className='row'>
@@ -37,6 +38,8 @@ const CardCaseGlobal = ({ positif, meninggal, sembuh }) => {
           </div>
         </div>
       </div>
+      <p className='mx-4 text-end text-coral'>Update Terakhir: 2021-11-09</p>
+    </div>
     </div>
   );
 };
