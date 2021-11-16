@@ -4,11 +4,11 @@ const BusinessProcess = () => {
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-lg-6">
                     <div className="mt-5 mt-lg-0">
-                        <h4 className="fw-bold"> Bagaimana Neimo Bekerja? </h4>
-                        <p><b>Neimo</b> merupakan media informasi yang dipercaya untuk menyampaikan informasi seputaran
+                        <h4 className="fw-bold text-center text-sm-start"> Bagaimana Neimo Bekerja? </h4>
+                        <p className="text-center text-sm-start"><b>Neimo</b> merupakan media informasi yang dipercaya untuk menyampaikan informasi seputaran
                             COVID-19 dengan valid, akurat dan terverifikasi.
                         </p>
-                        <a href><button type="button" class="btn btn-outline-dark px-5">Pelajari</button></a>
+                        <a href><button type="button" class="btn btn-outline-dark px-5 text-center text-sm-start">Pelajari</button></a>
                     </div>
                 </div>
                 <div className="col-12 col-lg-6">
