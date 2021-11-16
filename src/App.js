@@ -10,25 +10,31 @@ import { IndoContextProvider } from './context/IndonesiaContext';
 import { ProvinceContextProvider } from './context/ProvinceContext';
 import { IndonesiaDailyContextProvider } from './context/IndonesiaDailyContext';
 import { CountriesContextProvider } from './context/CountriesContext';
+import { GlobalContextProvider } from './context/GlobalContext';
 
 function App() {
   return (
     <React.Fragment>
-      <IndoContextProvider>
-        <ProvinceContextProvider>
-          <IndonesiaDailyContextProvider>
-            <CountriesContextProvider>
-              <BrowserRouter>
-                <Routes>
-                  <Route path='/' element={<LandingPage />}></Route>
-                  <Route path='/indonesia' element={<IndonesiaData />}></Route>
-                  <Route path='/global' element={<GlobalData />}></Route>
-                </Routes>
-              </BrowserRouter>
-            </CountriesContextProvider>
-          </IndonesiaDailyContextProvider>
-        </ProvinceContextProvider>
-      </IndoContextProvider>
+      <GlobalContextProvider>
+        <IndoContextProvider>
+          <ProvinceContextProvider>
+            <IndonesiaDailyContextProvider>
+              <CountriesContextProvider>
+                <BrowserRouter>
+                  <Routes>
+                    <Route path='/' element={<LandingPage />}></Route>
+                    <Route
+                      path='/indonesia'
+                      element={<IndonesiaData />}
+                    ></Route>
+                    <Route path='/global' element={<GlobalData />}></Route>
+                  </Routes>
+                </BrowserRouter>
+              </CountriesContextProvider>
+            </IndonesiaDailyContextProvider>
+          </ProvinceContextProvider>
+        </IndoContextProvider>
+      </GlobalContextProvider>
     </React.Fragment>
   );
 }

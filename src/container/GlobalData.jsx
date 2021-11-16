@@ -12,6 +12,7 @@ const GlobalData = () => {
 
   return (
     <React.Fragment>
+      <div className='bg-light'>
       <Navbar />
       <CardCaseGlobal
         key={value.length}
@@ -22,6 +23,7 @@ const GlobalData = () => {
       <SortAndSearchCountries></SortAndSearchCountries>
       <CountriesDataTable></CountriesDataTable>
       <Footer/>
+      </div>
     </React.Fragment>
   );
 };
