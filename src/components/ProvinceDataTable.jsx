@@ -38,8 +38,8 @@ const ProvinceDataTable = ({ ...data }) => {
     <div className='container mb-5'>
       <div class='table-wrapper-scroll-y my-custom-scrollbar'>
         <div className='table-responsive'>
-          <table className='table table-borderless table-hover shadow table-fixed'>
-            <thead className='bg-table text-white '>
+          <table className='table table-borderless table-hover shadow table-fixed '>
+            <thead className='bg-table text-white theader'>
               <tr>
                 <th scope='col' className=' d-none d-sm-block theader'>
                   No
