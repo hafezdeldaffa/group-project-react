@@ -11,11 +11,13 @@ import { ProvinceContextProvider } from './context/ProvinceContext';
 import { IndonesiaDailyContextProvider } from './context/IndonesiaDailyContext';
 import { CountriesContextProvider } from './context/CountriesContext';
 import { GlobalContextProvider } from './context/GlobalContext';
+import { GlobalDataContextProvider } from './context/GlobalDataContext';
 
 function App() {
   return (
     <React.Fragment>
       <GlobalContextProvider>
+        <GlobalDataContextProvider>
         <IndoContextProvider>
           <ProvinceContextProvider>
             <IndonesiaDailyContextProvider>
@@ -34,6 +36,7 @@ function App() {
             </IndonesiaDailyContextProvider>
           </ProvinceContextProvider>
         </IndoContextProvider>
+        </GlobalDataContextProvider>
       </GlobalContextProvider>
     </React.Fragment>
   );
