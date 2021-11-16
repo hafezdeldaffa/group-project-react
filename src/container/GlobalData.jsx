@@ -5,9 +5,11 @@ import CountriesDataTable from '../components/CountriesDataTable';
 import SortAndSearchCountries from '../components/SortAndSearchCountries';
 import CardCaseGlobal from '../components/CardCaseGlobal';
 import Footer from '../components/Footer';
+import { GlobalDataContext } from '../context/GlobalDataContext';
 
 const GlobalData = () => {
   const [...value] = useContext(GlobalContext);
+  const [GlobalData] = useContext(GlobalDataContext)
   console.log(value);
 
   return (
@@ -15,10 +17,8 @@ const GlobalData = () => {
       <div className='bg-light'>
       <Navbar />
       <CardCaseGlobal
-        key={value.length}
-        positif={value[0]}
-        meninggal={value[1]}
-        sembuh={value[2]}
+        key={GlobalData.length}
+        cases={GlobalData}
       />
       <SortAndSearchCountries></SortAndSearchCountries>
       <CountriesDataTable></CountriesDataTable>
