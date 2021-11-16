@@ -1,5 +1,4 @@
-const CardCaseGlobal = ({ positif, meninggal, sembuh }) => {
-  console.log(sembuh);
+const CardCaseGlobal = ({ cases }) => {
   return (
     <div className="container">
       <div className='card mb-3 mx-auto mt-4 shadow border-0' style={{ maxWidth: '700px' }}>
@@ -21,19 +20,19 @@ const CardCaseGlobal = ({ positif, meninggal, sembuh }) => {
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Positif</h5>
-              <li className='card-text'>{positif.value}</li>
+              <li className='card-text'>{cases.new_cases}</li>
             </div>
           </div>
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Sembuh</h5>
-              <li className='card-text'>{sembuh.value}</li>
+              <li className='card-text'>{cases.total_recovered}</li>
             </div>
           </div>
           <div className='col'>
             <div className='card-body'>
               <h5 className='card-title'>Meninggal</h5>
-              <li className='card-text'>{meninggal.value}</li>
+              <li className='card-text'>{cases.new_death}</li>
             </div>
           </div>
         </div>
