@@ -118,15 +118,14 @@
     width: 15px;
     background-color: linear-gradient(#F5F5F5, #000000);
   }
-  
 .table-wrapper-scroll-y {
-  overflow-y: auto;
+  display: block;
   }
 
 
-.theader{
-    position: sticky;
-    top: 0px;
+  .theader{
+    position:sticky;
+    top: 0 ;
 }
 
 
