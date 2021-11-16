@@ -35,28 +35,28 @@ const ProvinceDataTable = ({ ...data }) => {
   );
 
   return (
-    <div className='container'>
+    <div className='container mb-5'>
       <div class='table-wrapper-scroll-y my-custom-scrollbar'>
         <div className='table-responsive'>
-          <table className='table table-borderless table-hover shadow table-fixed'>
-            <thead className='bg-table text-white'>
+          <table className='table table-borderless table-hover shadow table-fixed '>
+            <thead className='bg-table text-white theader'>
               <tr>
-                <th scope='col' className=' d-none d-sm-block sticky-top'>
+                <th scope='col' className=' d-none d-sm-block theader'>
                   No
                 </th>
-                <th scope='col' className='sticky-top'>
+                <th scope='col' className='theader'>
                   Provinsi
                 </th>
-                <th scope='col' className='sticky-top'>
+                <th scope='col' className='theader'>
                   Positif
                 </th>
-                <th scope='col' className='sticky-top'>
+                <th scope='col' className='theader'>
                   Dirawat
                 </th>
-                <th scope='col' className='sticky-top'>
+                <th scope='col' className='theader'>
                   Sembuh
                 </th>
-                <th scope='col' className='sticky-top'>
+                <th scope='col' className='theader'>
                   Meninggal
                 </th>
               </tr>

@@ -105,8 +105,20 @@
   position: relative;
   height: 700px;
   overflow: auto;
+  background: #F5F5F5;
   }
-  .table-wrapper-scroll-y {
+
+  .my-custom-scrollbar::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    background-color: #2647bd;  
+  }
+  .my-custom-scrollbar::-webkit-scrollbar
+  {
+    width: 15px;
+    background-color: linear-gradient(#F5F5F5, #000000);
+  }
+.table-wrapper-scroll-y {
   display: block;
   }
 
@@ -138,4 +150,20 @@
 
 .bg-vacinated{
   background: #D57CFF !important;
+}
+
+.bg-positif:hover{
+  background: black !important;
+}
+
+.bg-negative:hover{
+  background: black !important;
+}
+
+.bg-recovered:hover{
+  background: black !important;
+}
+
+.bg-vacinated:hover{
+  background: black !important;
 }

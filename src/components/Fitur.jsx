@@ -4,8 +4,8 @@ const Fitur = () => {
             <div className="row d-flex align-items-center">
                 <div className="col-12 col-lg-6">
                     <div className="">
-                        <h4 className="fw-bold"> Fitur Dari Neimo </h4>
-                        <p> Neimo memberikan kemudahan bagi masyarakat dalam
+                        <h4 className="fw-bold text-center text-sm-start"> Fitur Dari Neimo </h4>
+                        <p className="text-center text-sm-start"> Neimo memberikan kemudahan bagi masyarakat dalam
                             menemukan informasi terkait COVID-19. Fitur yang ditawarkan Neimo meliputi :
                         </p>
                         <ul>

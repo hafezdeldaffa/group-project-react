@@ -2,7 +2,7 @@ const CardCase = ({ cases }) => {
   return (
     <div className='container'>
       <div
-        className='card mb-3 mx-auto mt-4 shadow border-0 '
+        className='card mx-auto mt-4 shadow border-0 card-cases '
         style={{ maxWidth: '700px' }}
       >
         <div className='row g-0'>
@@ -47,7 +47,7 @@ const CardCase = ({ cases }) => {
             </div>
           </div>
         </div>
-        <p className='mx-4 text-end text-coral'>Update Terakhir: 2021-11-09</p>
+        <p className='mx-4 text-center text-coral fw-bold'>Update Terakhir: 2021-11-09</p>
       </div>
     </div>
   );
